@@ -5,14 +5,14 @@ import (
 	"log"
 	"net"
 	"sync"
-	"github.com/Shekina22/is105sem03/mycrypt"
+"github.com/Shekina22/is105sem03/mycrypt"
 )
 
 func main() {
 
 	var wg sync.WaitGroup
 
-	server, err := net.Listen("tcp", "172.17.0.2:4000")
+	server, err := net.Listen("tcp", "172.17.0.3:4000")
 	if err != nil {
 		log.Fatal(err)
 	}
